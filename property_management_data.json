@@ -106,14 +106,14 @@
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
-                        "_firstName": {
+                        "firstName": {
                             "title": "FirstName",
                             "description": "first name",
                             "type": "string",
                             "example": "太郎",
                             "minLength": 1
                         },
-                        "_lastName": {
+                        "lastName": {
                             "title": "LastName",
                             "description": "last name",
                             "type": "string",
