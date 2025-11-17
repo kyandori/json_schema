@@ -6,13 +6,13 @@
     "additionalProperties": false,
     "properties": {
         "metadata": {
-            "title": "Meta data",
+            "title": "MetaData",
             "description": "Dataset meta information",
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "datetime": {
-                    "title": "Datetime",
+                    "title": "DateTime",
                     "description": "Acquisition date and time",
                     "$comment": "Assigns the **current date and time**.",
                     "type": "string",
