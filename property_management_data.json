@@ -168,11 +168,11 @@
                 "additionalProperties": false,
                 "properties": {
                     "postalCode": {
-                        "title": "",
-                        "description": "",
+                        "title": "PostalCode",
+                        "description": "postal code",
                         "type": "string",
-                        "example": "",
-                        "pattern": ""
+                        "example": "1140034",
+                        "pattern": "[0-9]{8}"
                     },
                     "****": {
                         "title": "",
