@@ -47,9 +47,9 @@
         "metadata"
     ],
     "$defs": {
-        "tenant": {
-            "title": "Tenant details",
-            "description": "Tenant details",
+        "managementData": {
+            "title": "ManagementData",
+            "description": "Management data",
             "type": "object",
             "additionalProperties": false,
             "properties": {
