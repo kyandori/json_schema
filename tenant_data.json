@@ -82,23 +82,21 @@
                     "maxLength": 11
                 }
             },
-            "if": {
-                "required": [
-                    "_mobileNumber"
-                ]
-            },
-            "then": {
-                "required": [
-                    "_name",
-                    "_mobileNumber"
-                ]
-            },
-            "else": {
-                "required": [
-                    "_name",
-                    "_phoneNumber"
-                ]
-            }
+            "required": [
+                "_name"
+            ],
+            "anyOf": [
+                {
+                    "required": [
+                        "_mobileNumber"
+                    ]
+                },
+                {
+                    "required": [
+                        "_phoneNumber"
+                    ]
+                }
+            ]
         }
     }
 }
