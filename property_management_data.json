@@ -7,7 +7,7 @@
     "properties": {
         "metadata": {
             "title": "MetaData",
-            "description": "Dataset meta information",
+            "description": "Meta information",
             "type": "object",
             "additionalProperties": false,
             "properties": {
