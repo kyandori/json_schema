@@ -172,29 +172,25 @@
                         "description": "postal code",
                         "type": "string",
                         "example": "1140034",
-                        "pattern": "[0-9]{8}"
+                        "pattern": "[0-9]{7}"
                     },
-                    "****": {
-                        "title": "",
-                        "description": "",
-                        "$comment": "",
+                    "prefectures": {
+                        "title": "Prefectures",
+                        "description": "prefectures",
                         "type": "string",
-                        "example": "",
+                        "example": "神奈川県",
                         "pattern": "",
-                        "minLength": ,
-                        "maxLength": ,
+                        "minLength": 3,
+                        "maxLength": 4,
                     },
-                    "****": {
-                        "title": "",
-                        "description": "",
-                        "$comment": "",
+                    "city": {
+                        "title": "City",
+                        "description": "city",
                         "type": "string",
-                        "example": "",
+                        "example": "川崎市多摩区",
                         "pattern": "",
-                        "minLength": ,
-                        "maxLength": ,
                     },
-                    "****": {
+                    "town": {
                         "title": "",
                         "description": "",
                         "$comment": "",
