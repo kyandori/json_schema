@@ -160,6 +160,13 @@
                         ]
                     }
                 ]
+            },
+            "address": {
+                "title": "Address",
+                "description": "address",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {}
             }
         }
     }
