@@ -145,10 +145,11 @@
                     ]
                 }
             },
-            "required": [],
-            "if": {},
-            "then": {},
-            "else": {},
+            "required": [
+                "_firstName",
+                "_lastName",
+                "_kana"
+            ]
         },
     }
 }
