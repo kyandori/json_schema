@@ -1,0 +1,66 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Tenant data",
+    "description": "Tenant management data",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "metadata": {
+            "title": "Meta data",
+            "description": "Dataset meta information",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "datetime": {
+                    "title": "datetime",
+                    "description": "Acquisition date and time",
+                    "$comment": "Assigns the **current date and time**.",
+                    "type": "string",
+                    "example": "2025/07/23 09:23:31",
+                    "pattern": "^[0-9]{4}/(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01]) ([01][0-9]|2[0-4]):([012345][0-9]):([012345][0-9])$"
+                },
+                "results": {
+                    "title": "results",
+                    "description": "Number of acquired data",
+                    "$comment": "Enter the **number of data obtained**.",
+                    "type": "integer",
+                    "minimum": 0
+                }
+            },
+            "required": ["results", "datetime"]
+        },
+        "tenantList": {
+            "title": "Tenant List",
+            "description": "List of tenant details",
+            "$comment": "List of **tenant details**",
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/tenant"
+            }
+        }
+    },
+    "required": [],
+    "then": {},
+    "else": {},
+    "if": {
+        "properties": {
+            "tenantList": {
+                "minItems": 1
+            }
+        }
+    },
+    "then": {
+        "required": [
+            "metadata",
+            "tenantList"
+        ]
+    },
+    "else": {
+        "required": [
+            "metadata"
+        ]
+    },
+    "$defs": {
+        **properties代入**
+    }
+}
