@@ -174,9 +174,9 @@
                         "example": "1140034",
                         "pattern": "[0-9]{7}"
                     },
-                    "prefectures": {
-                        "title": "Prefectures",
-                        "description": "prefectures",
+                    "prefecture": {
+                        "title": "Prefecture",
+                        "description": "prefecture",
                         "type": "string",
                         "example": "神奈川県",
                         "pattern": "",
@@ -190,22 +190,18 @@
                         "example": "川崎市多摩区",
                         "pattern": "",
                     },
-                    "town": {
-                        "title": "",
-                        "description": "",
-                        "$comment": "",
+                    "townArea": {
+                        "title": "TownArea",
+                        "description": "town area",
                         "type": "string",
-                        "example": "",
+                        "example": "西生田",
                         "pattern": "",
-                        "minLength": ,
-                        "maxLength": ,
                     },
-                    "****": {
-                        "title": "",
-                        "description": "",
-                        "$comment": "",
+                    "chome": {
+                        "title": "Chome",
+                        "description": "chome",
                         "type": "string",
-                        "example": "",
+                        "example": "2",
                         "pattern": "",
                         "minLength": ,
                         "maxLength": ,
