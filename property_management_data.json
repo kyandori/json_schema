@@ -166,7 +166,13 @@
                 "description": "address",
                 "type": "object",
                 "additionalProperties": false,
-                "properties": {}
+                "properties": {
+                    
+                },
+                "required": [],
+                "if": {},
+                "then": {},
+                "else": {},
             }
         }
     }
