@@ -33,13 +33,13 @@
                 "datetime"
             ]
         },
-        "tenantList": {
-            "title": "Tenant List",
-            "description": "List of tenant details",
-            "$comment": "List of **tenant details**",
+        "managementDataList": {
+            "title": "ManagementDataList",
+            "description": "List of management data",
+            "$comment": "List of **management data**",
             "type": "array",
             "items": {
-                "$ref": "#/$defs/tenant"
+                "$ref": "#/$defs/managementData"
             }
         }
     },
