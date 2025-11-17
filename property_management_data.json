@@ -115,7 +115,7 @@
                 "required": [
                     "firstName",
                     "lastName",
-                    "Kana"
+                    "kana"
                 ]
             },
             "telephoneNumber": {
