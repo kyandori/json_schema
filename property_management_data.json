@@ -54,7 +54,7 @@
             "additionalProperties": false,
             "properties": {
                 "name": {
-                    "$ref": "#/$defs/_name"
+                    "$ref": "#/$defs/dataItems/name"
                 },
                 "mobileNumber": {
                     "title": "MobileNumber",
@@ -100,7 +100,7 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "_name": {
+                "name": {
                     "title": "Name",
                     "description": "name",
                     "type": "object",
