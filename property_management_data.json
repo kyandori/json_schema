@@ -146,6 +146,15 @@
                     "lastName",
                     "kana"
                 ]
+            },
+            "telephoneNumber": {
+                "title": "TelephoneNumber",
+                "description": "telephone number",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    
+                }
             }
         }
     }
