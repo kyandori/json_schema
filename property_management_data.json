@@ -93,7 +93,7 @@
                         "properties": {
                             "firstName": {
                                 "title": "FirstName",
-                                "description": "first name", 
+                                "description": "first name",
                                 "type": "string",
                                 "example": "タロウ",
                                 "minLength": 1
