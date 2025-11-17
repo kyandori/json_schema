@@ -97,7 +97,9 @@
                 }
             },
             "if": {
-                "required": ["_mobileNumber"]
+                "required": [
+                    "_mobileNumber"
+                ]
             },
             "then": {
                 "required": [
