@@ -42,24 +42,9 @@
             }
         }
     },
-    "if": {
-        "properties": {
-            "tenantList": {
-                "minItems": 1
-            }
-        }
-    },
-    "then": {
-        "required": [
-            "metadata",
-            "tenantList"
-        ]
-    },
-    "else": {
-        "required": [
-            "metadata"
-        ]
-    },
+    "required": [
+        "metadata"
+    ],
     "$defs": {
         "tenant": {
             "title": "Tenant details",
