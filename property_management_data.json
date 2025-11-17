@@ -190,9 +190,9 @@
                         "example": "川崎市多摩区",
                         "pattern": ""
                     },
-                    "townArea": {
-                        "title": "TownArea",
-                        "description": "town area",
+                    "district": {
+                        "title": "District",
+                        "description": "district",
                         "type": "string",
                         "example": "西生田",
                         "pattern": ""
