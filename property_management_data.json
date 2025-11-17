@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title": "Management data",
+    "title": "PropertyManagementData",
     "description": "Property management data",
     "type": "object",
     "additionalProperties": false,
