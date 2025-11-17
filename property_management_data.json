@@ -114,7 +114,8 @@
                 },
                 "required": [
                     "firstName",
-                    "lastName"
+                    "lastName",
+                    "Kana"
                 ]
             },
             "telephoneNumber": {
