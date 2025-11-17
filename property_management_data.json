@@ -17,7 +17,7 @@
                     "$comment": "Assigns the **current date and time**.",
                     "type": "string",
                     "format": "date-time",
-                    "example": "2025-07-23T09:23:31+09:00",
+                    "example": "2025-07-23T09:23:31+09:00"
                 },
                 "results": {
                     "title": "Results",
