@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title": "Tenant data",
-    "description": "Tenant management data",
+    "title": "Management data",
+    "description": "Property management data",
     "type": "object",
     "additionalProperties": false,
     "properties": {
