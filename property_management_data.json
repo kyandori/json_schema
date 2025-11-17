@@ -172,7 +172,7 @@
                         "description": "postal code",
                         "type": "string",
                         "example": "1140034",
-                        "pattern": "[0-9]{7}"
+                        "pattern": "^[0-9]{7}$"
                     },
                     "prefecture": {
                         "title": "Prefecture",
@@ -181,30 +181,30 @@
                         "example": "神奈川県",
                         "pattern": "",
                         "minLength": 3,
-                        "maxLength": 4,
+                        "maxLength": 4
                     },
                     "city": {
                         "title": "City",
                         "description": "city",
                         "type": "string",
                         "example": "川崎市多摩区",
-                        "pattern": "",
+                        "pattern": ""
                     },
                     "townArea": {
                         "title": "TownArea",
                         "description": "town area",
                         "type": "string",
                         "example": "西生田",
-                        "pattern": "",
+                        "pattern": ""
                     },
                     "chome": {
                         "title": "Chome",
                         "description": "chome",
                         "type": "string",
-                        "example": "2",
-                        "pattern": "",
-                        "minLength": ,
-                        "maxLength": ,
+                        "example": "3",
+                        "pattern": "^([1-9]|[1-3][0-9]|4[0-2])$",
+                        "minLength": 1,
+                        "maxLength": 2
                     },
                     "****": {
                         "title": "",
