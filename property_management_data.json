@@ -6,7 +6,7 @@
     "additionalProperties": false,
     "properties": {
         "metadata": {
-            "title": "MetaData",
+            "title": "Metadata",
             "description": "Meta information",
             "type": "object",
             "additionalProperties": false,
@@ -99,8 +99,8 @@
             ]
         },
         "_name": {
-            "title": "name",
-            "description": "Tenant name",
+            "title": "Name",
+            "description": "name",
             "$comment": "Be sure to include a space between first and last name.",
             "type": "string",
             "example": "山田 太郎",
