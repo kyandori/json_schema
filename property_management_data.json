@@ -155,58 +155,5 @@
                 }
             }
         }
-        "_name": {
-            "title": "Name",
-            "description": "name",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "_firstName": {
-                    "title": "FirstName",
-                    "description": "first name",
-                    "type": "string",
-                    "example": "太郎",
-                    "minLength": 1
-                },
-                "_lastName": {
-                    "title": "LastName",
-                    "description": "last name",
-                    "type": "string",
-                    "example": "山田",
-                    "minLength": 1
-                },
-                "_kana": {
-                    "title": "NameKana",
-                    "description": "name kana",
-                    "type": "object",
-                    "additionalProperties": false,
-                    "properties": {
-                        "_firstName": {
-                            "title": "FirstNameKana",
-                            "description": "first name kana",
-                            "type": "string",
-                            "example": "タロウ",
-                            "minLength": 1
-                        },
-                        "_lastName": {
-                            "title": "LastNameKana",
-                            "description": "last name kana",
-                            "type": "string",
-                            "example": "ヤマダ",
-                            "minLength": 1
-                        }
-                    },
-                    "required": [
-                        "_firstName",
-                        "_lastName"
-                    ]
-                }
-            },
-            "required": [
-                "_firstName",
-                "_lastName",
-                "_kana"
-            ]
-        }
     }
 }
