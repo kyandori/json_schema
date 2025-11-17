@@ -53,9 +53,11 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "$ref": "#/$defs/_name",
-                "_mobileNumber": {
-                    "title": "mobile number",
+                "name": {
+                    "$ref": "#/$defs/_name"
+                },
+                "mobileNumber": {
+                    "title": "MobileNumber",
                     "description": "Tenant's mobile phone number",
                     "$comment": "**An 11-digit mobile phone number string without hyphens**",
                     "type": "string",
@@ -64,8 +66,8 @@
                     "minLength": 11,
                     "maxLength": 11
                 },
-                "_phoneNumber": {
-                    "title": "phone number",
+                "phoneNumber": {
+                    "title": "PhoneNumber",
                     "description": "Tenant's phone number",
                     "$comment": "**A 10-digit or 11-digit phone number string that does not include hyphens**",
                     "type": "string",
@@ -76,17 +78,17 @@
                 }
             },
             "required": [
-                "_name"
+                "name"
             ],
             "anyOf": [
                 {
                     "required": [
-                        "_mobileNumber"
+                        "mobileNumber"
                     ]
                 },
                 {
                     "required": [
-                        "_phoneNumber"
+                        "phoneNumber"
                     ]
                 }
             ]
