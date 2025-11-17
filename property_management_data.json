@@ -115,21 +115,21 @@
                         "minLength": 1
                     },
                     "kana": {
-                        "title": "NameKana",
-                        "description": "name kana",
+                        "title": "Kana",
+                        "description": "kana",
                         "type": "object",
                         "additionalProperties": false,
                         "properties": {
                             "firstName": {
-                                "title": "FirstNameKana",
-                                "description": "first name kana", 
+                                "title": "FirstName",
+                                "description": "first name", 
                                 "type": "string",
                                 "example": "タロウ",
                                 "minLength": 1
                             },
                             "lastName": {
-                                "title": "LastNameKana",
-                                "description": "last name kana",
+                                "title": "LastName",
+                                "description": "last name",
                                 "type": "string",
                                 "example": "ヤマダ",
                                 "minLength": 1
