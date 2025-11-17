@@ -43,9 +43,6 @@
             }
         }
     },
-    "required": [
-        "metaData"
-    ],
     "$defs": {
         "managementData": {
             "title": "ManagementData",
