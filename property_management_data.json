@@ -167,7 +167,41 @@
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
-                    
+                    "****": {
+                        "title": "",
+                        "description": "",
+                        "$comment": "",
+                    },
+                    "****": {
+                        "title": "",
+                        "description": "",
+                        "$comment": "",
+                    },
+                    "****": {
+                        "title": "",
+                        "description": "",
+                        "$comment": "",
+                    },
+                    "****": {
+                        "title": "",
+                        "description": "",
+                        "$comment": "",
+                    },
+                    "****": {
+                        "title": "",
+                        "description": "",
+                        "$comment": "",
+                    },
+                    "****": {
+                        "title": "",
+                        "description": "",
+                        "$comment": "",
+                    },
+                    "****": {
+                        "title": "",
+                        "description": "",
+                        "$comment": "",
+                    }
                 },
                 "required": [],
                 "if": {},
