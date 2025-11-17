@@ -97,11 +97,7 @@
                 }
             },
             "if": {
-                "properties": {
-                    "_mobileNumber": {
-                        "minLength": 11
-                    }
-                }
+                "required": ["_mobileNumber"]
             },
             "then": {
                 "required": [
