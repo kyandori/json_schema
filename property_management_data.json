@@ -5,13 +5,13 @@
     "type": "object",
     "additionalProperties": false,
     "properties": {
-        "metadata": {
-            "title": "Metadata",
+        "metaData": {
+            "title": "MetaData",
             "description": "Meta information",
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "datetime": {
+                "dateTime": {
                     "title": "DateTime",
                     "description": "Acquisition date and time",
                     "$comment": "Assigns the **current date and time**.",
@@ -29,8 +29,8 @@
                 }
             },
             "required": [
-                "results",
-                "datetime"
+                "dateTime",
+                "results"
             ]
         },
         "managementDataList": {
@@ -44,7 +44,7 @@
         }
     },
     "required": [
-        "metadata"
+        "metaData"
     ],
     "$defs": {
         "managementData": {
