@@ -42,6 +42,9 @@
             }
         }
     },
+    "required": [
+        "metaData"
+    ],
     "$defs": {
         "managementData": {
             "title": "ManagementData",
@@ -55,7 +58,11 @@
                 "telephoneNumber": {
                     "$ref": "#/$defs/dataItems/telephoneNumber"
                 }
-            }
+            },
+            "required": [
+                "name",
+                "telephoneNumber"
+            ]
         },
         "dataItems": {
             "name": {
