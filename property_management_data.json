@@ -57,6 +57,9 @@
                 },
                 "telephoneNumber": {
                     "$ref": "#/$defs/dataItems/telephoneNumber"
+                },
+                "address": {
+                    "$ref": "#/$defs/dataItems/address"
                 }
             },
             "required": [
