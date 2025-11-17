@@ -93,6 +93,16 @@
                 }
             ]
         },
+        "dataItems": {
+            "title": "DataItems",
+            "description": "Data items",
+            "$comment": "Dataset items",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                
+            }
+        }
         "_name": {
             "title": "Name",
             "description": "name",
