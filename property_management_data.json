@@ -53,14 +53,7 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "_name": {
-                    "title": "name",
-                    "description": "Tenant name",
-                    "$comment": "Be sure to include a space between first and last name.",
-                    "type": "string",
-                    "example": "山田 太郎",
-                    "minLength": 2
-                },
+                "$ref": "#/$defs/_name",
                 "_mobileNumber": {
                     "title": "mobile number",
                     "description": "Tenant's mobile phone number",
