@@ -72,9 +72,9 @@
                 "kana"
             ]
         },
-        "telephoneNumber": {
-            "title": "TelephoneNumber",
-            "description": "telephone number",
+        "phoneNumber": {
+            "title": "PhoneNumber",
+            "description": "phone number",
             "type": "object",
             "additionalProperties": false,
             "properties": {
