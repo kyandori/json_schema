@@ -23,9 +23,9 @@
             "example": "ヤマダタロウ",
             "pattern": "^[ァ-ヴー]+$"
         },
-        "nameSet": {
-            "title": "NameSet",
-            "description": "name set",
+        "nameSetSplit": {
+            "title": "NameSetSplit",
+            "description": "name set split",
             "type": "object",
             "additionalProperties": false,
             "properties": {
