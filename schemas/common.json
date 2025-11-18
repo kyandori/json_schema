@@ -33,15 +33,13 @@
                     "title": "FirstName",
                     "description": "first name",
                     "type": "string",
-                    "example": "太郎",
-                    "minLength": 1
+                    "example": "太郎"
                 },
                 "lastName": {
                     "title": "LastName",
                     "description": "last name",
                     "type": "string",
-                    "example": "山田",
-                    "minLength": 1
+                    "example": "山田"
                 },
                 "kana": {
                     "title": "Kana",
@@ -53,15 +51,13 @@
                             "title": "FirstName",
                             "description": "first name",
                             "type": "string",
-                            "example": "タロウ",
-                            "minLength": 1
+                            "example": "タロウ"
                         },
                         "lastName": {
                             "title": "LastName",
                             "description": "last name",
                             "type": "string",
-                            "example": "ヤマダ",
-                            "minLength": 1
+                            "example": "ヤマダ"
                         }
                     },
                     "required": [
