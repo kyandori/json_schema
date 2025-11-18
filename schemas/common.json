@@ -10,18 +10,21 @@
             "type": "string",
             "format": "uuid"
         },
-        "name": {
-            "title": "Name",
-            "description": "name",
-            "type": "string",
-            "example": "山田太郎"
-        },
-        "nameKana": {
-            "title": "NameKana",
-            "description": "name kana",
-            "type": "string",
-            "example": "ヤマダタロウ",
-            "pattern": "^[ァ-ヴー]+$"
+        "nameItems": 
+        "nameSet": {
+            "name": {
+                "title": "Name",
+                "description": "name",
+                "type": "string",
+                "example": "山田太郎"
+            },
+            "nameKana": {
+                "title": "NameKana",
+                "description": "name kana",
+                "type": "string",
+                "example": "ヤマダタロウ",
+                "pattern": "^[ァ-ヴー]+$"
+            }
         },
         "nameSetSplit": {
             "title": "NameSetSplit",
