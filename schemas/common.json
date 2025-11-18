@@ -51,13 +51,15 @@
                             "title": "FirstName",
                             "description": "first name",
                             "type": "string",
-                            "example": "タロウ"
+                            "example": "タロウ",
+                            "pattern": "^[ァ-ヴー]+$"
                         },
                         "lastName": {
                             "title": "LastName",
                             "description": "last name",
                             "type": "string",
-                            "example": "ヤマダ"
+                            "example": "ヤマダ",
+                            "pattern": "^[ァ-ヴー]+$"
                         }
                     },
                     "required": [
