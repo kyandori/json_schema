@@ -60,12 +60,16 @@
                 },
                 "address": {
                     "$ref": "#/$defs/dataItems/address"
+                },
+                "latLong": {
+                    "$ref": "#/$defs/dataItems/latLong"
                 }
             },
             "required": [
                 "name",
                 "telephoneNumber",
-                "address"
+                "address",
+                "latLong"
             ]
         },
         "dataItems": {
@@ -270,6 +274,32 @@
                     "city",
                     "district",
                     "addressRemaining"
+                ]
+            },
+            "latLong": {
+                "title": "LatLong",
+                "description": "lat long",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "latitude": {
+                        "title": "Latitude",
+                        "description": "latitude",
+                        "type": "number",
+                        "minimum": -90,
+                        "maximum": 90
+                    },
+                    "longitude": {
+                        "title": "Longitude",
+                        "description": "longitude",
+                        "type": "number",
+                        "minimum": -180,
+                        "maximum": 180
+                    }
+                },
+                "required": [
+                    "latitude",
+                    "longitude"
                 ]
             }
         }
