@@ -41,37 +41,26 @@
                     "type": "string",
                     "example": "山田"
                 },
-                "kana": {
-                    "title": "Kana",
-                    "description": "kana",
-                    "type": "object",
-                    "additionalProperties": false,
-                    "properties": {
-                        "firstName": {
-                            "title": "FirstName",
-                            "description": "first name",
-                            "type": "string",
-                            "example": "タロウ",
-                            "pattern": "^[ァ-ヴー]+$"
-                        },
-                        "lastName": {
-                            "title": "LastName",
-                            "description": "last name",
-                            "type": "string",
-                            "example": "ヤマダ",
-                            "pattern": "^[ァ-ヴー]+$"
-                        }
-                    },
-                    "required": [
-                        "firstName",
-                        "lastName"
-                    ]
+                "firstNameKana": {
+                    "title": "FirstNameKana",
+                    "description": "first name kana",
+                    "type": "string",
+                    "example": "タロウ",
+                    "pattern": "^[ァ-ヴー]+$"
+                },
+                "lastNameKana": {
+                    "title": "LastNameKana",
+                    "description": "last name kana",
+                    "type": "string",
+                    "example": "ヤマダ",
+                    "pattern": "^[ァ-ヴー]+$"
                 }
             },
             "required": [
                 "firstName",
                 "lastName",
-                "kana"
+                "firstNameKana",
+                "lastNameKana"
             ]
         },
         "phoneNumber": {
