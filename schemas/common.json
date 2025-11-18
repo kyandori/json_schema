@@ -20,7 +20,8 @@
             "title": "NameKana",
             "description": "name kana",
             "type": "string",
-            "example": "ヤマダタロウ"
+            "example": "ヤマダタロウ",
+            "pattern": "^[ァ-ヴー]+$"
         },
         "nameSet": {
             "title": "NameSet",
