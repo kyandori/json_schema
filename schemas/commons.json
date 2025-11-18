@@ -1,3 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/commons.json",
+  "title": "共通定義集",
+  
+  "$defs": {
+    "phoneNumber": {
+      "type": "string",
+      "pattern": "^[0-9]{2,4}-[0-9]{2,4}-[0-9]{3,4}$",
+      "description": "日本の電話番号形式"
+    },
+    "uuid": {
+      "type": "string",
+      "format": "uuid"
+    }
+  }
+}
+
 "$defs": {
     "managementData": {
         "title": "ManagementData",
