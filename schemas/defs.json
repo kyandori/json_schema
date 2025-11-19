@@ -43,7 +43,32 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                
+                "firstName": {
+                    "title": "FirstName",
+                    "description": "first name",
+                    "type": "string",
+                    "example": "太郎"
+                },
+                "lastName": {
+                    "title": "LastName",
+                    "description": "last name",
+                    "type": "string",
+                    "example": "山田"
+                },
+                "firstNameKana": {
+                    "title": "FirstNameKana",
+                    "description": "first name kana",
+                    "type": "string",
+                    "example": "タロウ",
+                    "pattern": "^[ァ-ヴー]+$"
+                },
+                "lastNameKana": {
+                    "title": "LastNameKana",
+                    "description": "last name kana",
+                    "type": "string",
+                    "example": "ヤマダ",
+                    "pattern": "^[ァ-ヴー]+$"
+                }
             },
             "required": [
                 "firstName",
