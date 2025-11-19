@@ -81,29 +81,23 @@
         },
         "patterns": {
             "kana": {
-                "type": "string",
                 "$comment": "カタカナと長音、スペースを許容",
                 "pattern": "^[ァ-ヴー\\s　]+$"
             },
             "kanaStrict": {
-                "type": "string",
                 "$comment": "カタカナと長音のみ（スペース不可）",
                 "pattern": "^[ァ-ヴー]+$"
             },
             "tel": {
-                "type": "string",
                 "pattern": "^(0[1-9][0-9]{8}|050[0-9]{8}|0[6-9]0[0-9]{8})$"
             },
             "telMobile": {
-                "type": "string",
                 "pattern": "^0[6-9]0[0-9]{8}$"
             },
             "telFixed": {
-                "type": "string",
                 "pattern": "^(0[1-9][0-9]{8}|050[0-9]{8})$"
             },
             "postalCode": {
-                "type": "string",
                 "pattern": "^[0-9]{7}$"
             }
         }
