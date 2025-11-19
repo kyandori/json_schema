@@ -10,61 +10,68 @@
             "type": "string",
             "format": "uuid"
         },
-        "nameItems": 
-        "nameSet": {
-            "name": {
-                "title": "Name",
-                "description": "name",
-                "type": "string",
-                "example": "山田太郎"
-            },
-            "nameKana": {
-                "title": "NameKana",
-                "description": "name kana",
-                "type": "string",
-                "example": "ヤマダタロウ",
-                "pattern": "^[ァ-ヴー]+$"
-            }
-        },
-        "nameSetSplit": {
-            "title": "NameSetSplit",
-            "description": "name set split",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "firstName": {
-                    "title": "FirstName",
-                    "description": "first name",
-                    "type": "string",
-                    "example": "太郎"
-                },
-                "lastName": {
-                    "title": "LastName",
-                    "description": "last name",
-                    "type": "string",
-                    "example": "山田"
-                },
-                "firstNameKana": {
-                    "title": "FirstNameKana",
-                    "description": "first name kana",
-                    "type": "string",
-                    "example": "タロウ",
-                    "pattern": "^[ァ-ヴー]+$"
-                },
-                "lastNameKana": {
-                    "title": "LastNameKana",
-                    "description": "last name kana",
-                    "type": "string",
-                    "example": "ヤマダ",
-                    "pattern": "^[ァ-ヴー]+$"
+        "nameItems": {
+            "nameSet": {
+                "title": "NameSet",
+                "description": "name set",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "name": {
+                        "title": "Name",
+                        "description": "name",
+                        "type": "string",
+                        "example": "山田太郎"
+                    },
+                    "nameKana": {
+                        "title": "NameKana",
+                        "description": "name kana",
+                        "type": "string",
+                        "example": "ヤマダタロウ",
+                        "pattern": "^[ァ-ヴー]+$"
+                    }
                 }
             },
-            "required": [
-                "firstName",
-                "lastName",
-                "firstNameKana",
-                "lastNameKana"
-            ]
+            "nameSetSplit": {
+                "title": "NameSetSplit",
+                "description": "name set split",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "firstName": {
+                        "title": "FirstName",
+                        "description": "first name",
+                        "type": "string",
+                        "example": "太郎"
+                    },
+                    "lastName": {
+                        "title": "LastName",
+                        "description": "last name",
+                        "type": "string",
+                        "example": "山田"
+                    },
+                    "firstNameKana": {
+                        "title": "FirstNameKana",
+                        "description": "first name kana",
+                        "type": "string",
+                        "example": "タロウ",
+                        "pattern": "^[ァ-ヴー]+$"
+                    },
+                    "lastNameKana": {
+                        "title": "LastNameKana",
+                        "description": "last name kana",
+                        "type": "string",
+                        "example": "ヤマダ",
+                        "pattern": "^[ァ-ヴー]+$"
+                    }
+                },
+                "required": [
+                    "firstName",
+                    "lastName",
+                    "firstNameKana",
+                    "lastNameKana"
+                ]
+            }
         },
         "phoneNumber": {
             "title": "PhoneNumber",
