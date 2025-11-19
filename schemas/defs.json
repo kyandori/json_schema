@@ -12,6 +12,11 @@
             "format": "uuid"
         },
         // ▼ name
-        
+        "fullName": {
+            
+        },
+        "structuredName": {
+            
+        }
     }
 }
