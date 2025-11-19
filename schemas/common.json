@@ -11,70 +11,76 @@
             "format": "uuid"
         },
         "nameItems": {
-            "nameSet": {
-                "title": "NameSet",
-                "description": "name set",
-                "type": "object",
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "title": "Name",
-                        "description": "name",
-                        "type": "string",
-                        "example": "山田太郎"
+            "title": "NameItems",
+            "description": "name items",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "nameSet": {
+                    "title": "NameSet",
+                    "description": "name set",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "name": {
+                            "title": "Name",
+                            "description": "name",
+                            "type": "string",
+                            "example": "山田太郎"
+                        },
+                        "nameKana": {
+                            "title": "NameKana",
+                            "description": "name kana",
+                            "type": "string",
+                            "example": "ヤマダタロウ",
+                            "pattern": "^[ァ-ヴー]+$"
+                        }
                     },
-                    "nameKana": {
-                        "title": "NameKana",
-                        "description": "name kana",
-                        "type": "string",
-                        "example": "ヤマダタロウ",
-                        "pattern": "^[ァ-ヴー]+$"
-                    }
+                    "required": [
+                        "name",
+                        "nameKana"
+                    ]
                 },
-                "required": [
-                    "name",
-                    "nameKana"
-                ]
-            },
-            "nameSetSplit": {
-                "title": "NameSetSplit",
-                "description": "name set split",
-                "type": "object",
-                "additionalProperties": false,
-                "properties": {
-                    "firstName": {
-                        "title": "FirstName",
-                        "description": "first name",
-                        "type": "string",
-                        "example": "太郎"
+                "nameSetSplit": {
+                    "title": "NameSetSplit",
+                    "description": "name set split",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "firstName": {
+                            "title": "FirstName",
+                            "description": "first name",
+                            "type": "string",
+                            "example": "太郎"
+                        },
+                        "lastName": {
+                            "title": "LastName",
+                            "description": "last name",
+                            "type": "string",
+                            "example": "山田"
+                        },
+                        "firstNameKana": {
+                            "title": "FirstNameKana",
+                            "description": "first name kana",
+                            "type": "string",
+                            "example": "タロウ",
+                            "pattern": "^[ァ-ヴー]+$"
+                        },
+                        "lastNameKana": {
+                            "title": "LastNameKana",
+                            "description": "last name kana",
+                            "type": "string",
+                            "example": "ヤマダ",
+                            "pattern": "^[ァ-ヴー]+$"
+                        }
                     },
-                    "lastName": {
-                        "title": "LastName",
-                        "description": "last name",
-                        "type": "string",
-                        "example": "山田"
-                    },
-                    "firstNameKana": {
-                        "title": "FirstNameKana",
-                        "description": "first name kana",
-                        "type": "string",
-                        "example": "タロウ",
-                        "pattern": "^[ァ-ヴー]+$"
-                    },
-                    "lastNameKana": {
-                        "title": "LastNameKana",
-                        "description": "last name kana",
-                        "type": "string",
-                        "example": "ヤマダ",
-                        "pattern": "^[ァ-ヴー]+$"
-                    }
-                },
-                "required": [
-                    "firstName",
-                    "lastName",
-                    "firstNameKana",
-                    "lastNameKana"
-                ]
+                    "required": [
+                        "firstName",
+                        "lastName",
+                        "firstNameKana",
+                        "lastNameKana"
+                    ]
+                }
             }
         },
         "phoneNumber": {
