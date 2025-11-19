@@ -79,6 +79,18 @@
                 ]
             }
         },
+        "address": {
+            
+        },
+        "telephoneNumber": {
+            
+        },
+        "mail": {
+            
+        },
+        "latLong": {
+            
+        },
         "patterns": {
             "kana": {
                 "$comment": "カタカナと長音、スペースを許容",
