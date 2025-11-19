@@ -129,12 +129,12 @@
                         "maxLength": 2,
                         "$ref": "#/$defs/patterns/subdistrict"
                     },
-                    "addressRemaining": {
-                        "title": "AddressRemaining",
-                        "description": "address remaining",
+                    "streetAddress": {
+                        "title": "StreetAddress",
+                        "description": "street address",
                         "type": "string",
                         "example": "3-15",
-                        "pattern": "^[1-9][0-9-]*$"
+                        "$ref": "#/$defs/patterns/streetAddress"
                     },
                     "buildingNameRoomNumber": {
                         "title": "BuildingNameRoomNumber",
@@ -174,6 +174,9 @@
             },
             "subdistrict": {
                 "pattern": "^[0-9]+$"
+            },
+            "streetAddress": {
+                "pattern": "^[0-9][0-9-]*$"
             },
             "tel": {
                 "pattern": "^(0[1-9][0-9]{8}|050[0-9]{8}|0[6-9]0[0-9]{8})$"
