@@ -14,9 +14,9 @@
             }
         },
         "name": {
-            "fullName": {
-                "title": "FullName",
-                "description": "full name",
+            "unstructuredName": {
+                "title": "UnstructuredName",
+                "description": "名称・名前",
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
@@ -127,7 +127,6 @@
                         "description": "subdistrict",
                         "type": "string",
                         "example": "3",
-                        "maxLength": 2,
                         "$ref": "#/$defs/patterns/subdistrict"
                     },
                     "streetAddress": {
@@ -174,7 +173,7 @@
                 "pattern": "^.+?[市区町村]$"
             },
             "subdistrict": {
-                "pattern": "^[0-9]+$"
+                "pattern": "^[0-9]{1,2}$"
             },
             "streetAddress": {
                 "pattern": "^[0-9][0-9-]*$"
