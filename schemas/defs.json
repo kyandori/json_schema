@@ -4,12 +4,13 @@
     "title": "Defs",
     "$comment": "定義ファイル。$defs内の各要素を$refで参照して利用してください。",
     "$defs": {
-        "$comment": "▼ id",
-        "uuid": {
-            "title": "UUID",
-            "description": "uuid",
-            "type": "string",
-            "format": "uuid"
+        "id": {
+            "uuid": {
+                "title": "UUID",
+                "description": "uuid",
+                "type": "string",
+                "format": "uuid"
+            }
         },
         "$comment":"▼ name",
         "fullName": {
@@ -100,7 +101,7 @@
                 "type": "string",
                 "pattern": "^(0[1-9][0-9]{8}|050[0-9]{8})$"
             },
-            "zipCode": {
+            "postalCode": {
                 "type": "string",
                 "pattern": "^[0-9]{7}$"
             }
