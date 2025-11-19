@@ -22,7 +22,7 @@
                     "title": "Name",
                     "description": "name",
                     "type": "string",
-                    "example": "山田太郎"
+                    "example": "山田　太郎"
                 },
                 "nameKana": {
                     "title": "NameKana",
