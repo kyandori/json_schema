@@ -30,7 +30,11 @@
                         "example": "ヤマダタロウ",
                         "pattern": "^[ァ-ヴー]+$"
                     }
-                }
+                },
+                "required": [
+                    "name",
+                    "nameKana"
+                ]
             },
             "nameSetSplit": {
                 "title": "NameSetSplit",
