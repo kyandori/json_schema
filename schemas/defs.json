@@ -30,7 +30,7 @@
                         "description": "name kana",
                         "type": "string",
                         "example": "ヤマダ タロウ",
-                        "pattern": "^[ァ-ヴー\\s　]+$"
+                        "$ref": "#/$defs/patterns/kana"
                     }
                 },
                 "required": [
@@ -61,14 +61,14 @@
                         "description": "first name kana",
                         "type": "string",
                         "example": "タロウ",
-                        "pattern": "^[ァ-ヴー]+$"
+                        "$ref": "#/$defs/patterns/kanaStrict"
                     },
                     "lastNameKana": {
                         "title": "LastNameKana",
                         "description": "last name kana",
                         "type": "string",
                         "example": "ヤマダ",
-                        "pattern": "^[ァ-ヴー]+$"
+                        "$ref": "#/$defs/patterns/kanaStrict"
                     }
                 },
                 "required": [
