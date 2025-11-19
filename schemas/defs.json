@@ -4,6 +4,14 @@
     "title": "Defs",
     "$comment": "定義ファイル。$defs内の各要素を$refで参照して利用してください。",
     "$defs": {
+        // ▼ id
+        "uuid": {
+            "title": "UUID",
+            "description": "uuid",
+            "type": "string",
+            "format": "uuid"
+        },
+        // ▼ name
         
     }
 }
