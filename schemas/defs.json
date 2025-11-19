@@ -18,7 +18,19 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                
+                "name": {
+                    "title": "Name",
+                    "description": "name",
+                    "type": "string",
+                    "example": "山田太郎"
+                },
+                "nameKana": {
+                    "title": "NameKana",
+                    "description": "name kana",
+                    "type": "string",
+                    "example": "ヤマダ タロウ",
+                    "pattern": "^[ァ-ヴー\\s　]+$"
+                }
             },
             "required": [
                 "name",
@@ -34,8 +46,10 @@
                 
             },
             "required": [
-                "name",
-                "nameKana"
+                "firstName",
+                "lastName",
+                "firstNameKana",
+                "lastNameKana"
             ]
         }
     }
