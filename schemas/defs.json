@@ -121,6 +121,15 @@
                         "type": "string",
                         "example": "西生田"
                     },
+                    "subdistrict": {
+                        "title": "Subdistrict",
+                        "description": "subdistrict",
+                        "type": "string",
+                        "example": "3",
+                        "maxLength": 2,
+                        "$ref": "#/$defs/patterns/subdistrict"
+                    },
+                    
                 },
                 "required": [
                     "prefecture",
@@ -141,14 +150,7 @@
             
             
                 
-                "chome": {
-                    "title": "Chome",
-                    "description": "chome",
-                    "type": "string",
-                    "example": "3",
-                    "pattern": "^([1-9]|[1-3][0-9]|4[0-2])$",
-                    "maxLength": 2
-                },
+                
                 "addressRemaining": {
                     "title": "AddressRemaining",
                     "description": "address remaining",
@@ -183,6 +185,9 @@
             },
             "city": {
                 "pattern": "^.+?[市区町村]$"
+            },
+            "subdistrict": {
+                "pattern": "^[0-9]+$"
             },
             "tel": {
                 "pattern": "^(0[1-9][0-9]{8}|050[0-9]{8}|0[6-9]0[0-9]{8})$"
