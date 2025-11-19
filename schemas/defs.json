@@ -129,7 +129,19 @@
                         "maxLength": 2,
                         "$ref": "#/$defs/patterns/subdistrict"
                     },
-                    
+                    "addressRemaining": {
+                        "title": "AddressRemaining",
+                        "description": "address remaining",
+                        "type": "string",
+                        "example": "3-15",
+                        "pattern": "^[1-9][0-9-]*$"
+                    },
+                    "buildingNameRoomNumber": {
+                        "title": "BuildingNameRoomNumber",
+                        "description": "building name, room number",
+                        "type": "string",
+                        "example": "吉田マンション 105号室"
+                    }
                 },
                 "required": [
                     "prefecture",
@@ -137,33 +149,7 @@
                     "district",
                     "addressRemaining"
                 ]
-            }
-        },
-
-
-
-
-
-
-
-            
-            
-            
-                
-                
-                "addressRemaining": {
-                    "title": "AddressRemaining",
-                    "description": "address remaining",
-                    "type": "string",
-                    "example": "3-15",
-                    "pattern": "^[1-9][0-9-]*$"
-                },
-                "roomNumber": {
-                    "title": "RoomNumber",
-                    "description": "room number",
-                    "type": "string",
-                    "example": "吉田マンション 105号室"
-                }
+            } 
         },
         "telephoneNumber": {
             
