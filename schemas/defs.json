@@ -8,7 +8,7 @@
         "id": {
             "uuid": {
                 "title": "UUID",
-                "description": "uuid",
+                "description": "ID",
                 "type": "string",
                 "format": "uuid"
             }
