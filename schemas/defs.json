@@ -45,32 +45,47 @@
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
-                    "firstName": {
-                        "title": "FirstName",
-                        "description": "first name",
-                        "type": "string",
-                        "example": "太郎"
+                    "name": {
+                        
+                    
+
+
+
+                    
+                        "firstName": {
+                            "title": "FirstName",
+                            "description": "first name",
+                            "type": "string",
+                            "example": "太郎"
+                        },
+                        "lastName": {
+                            "title": "LastName",
+                            "description": "last name",
+                            "type": "string",
+                            "example": "山田"
+                        }
                     },
-                    "lastName": {
-                        "title": "LastName",
-                        "description": "last name",
-                        "type": "string",
-                        "example": "山田"
-                    },
-                    "firstNameKana": {
-                        "title": "FirstNameKana",
-                        "description": "first name kana",
-                        "type": "string",
-                        "example": "タロウ",
-                        "$ref": "#/$defs/patterns/kanaStrict"
-                    },
-                    "lastNameKana": {
-                        "title": "LastNameKana",
-                        "description": "last name kana",
-                        "type": "string",
-                        "example": "ヤマダ",
-                        "$ref": "#/$defs/patterns/kanaStrict"
+                    "nameKana": {
+                        "firstNameKana": {
+                            "title": "FirstNameKana",
+                            "description": "first name kana",
+                            "type": "string",
+                            "example": "タロウ",
+                            "$ref": "#/$defs/patterns/kanaStrict"
+                        },
+                        "lastNameKana": {
+                            "title": "LastNameKana",
+                            "description": "last name kana",
+                            "type": "string",
+                            "example": "ヤマダ",
+                            "$ref": "#/$defs/patterns/kanaStrict"
+                        }
                     }
+
+
+
+
+                    
                 },
                 "required": [
                     "firstName",
