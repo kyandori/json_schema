@@ -88,10 +88,8 @@
                     
                 },
                 "required": [
-                    "firstName",
-                    "lastName",
-                    "firstNameKana",
-                    "lastNameKana"
+                    "name",
+                    "nameKana"
                 ]
             }
         },
