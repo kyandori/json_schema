@@ -31,7 +31,7 @@
                         "description": "name kana",
                         "type": "string",
                         "example": "ヤマダ タロウ",
-                        "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/patterns/kana"
+                        "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kana"
                     }
                 },
                 "required": [
@@ -80,14 +80,14 @@
                                 "description": "first name",
                                 "type": "string",
                                 "example": "タロウ",
-                                "$ref": "#/$defs/patterns/kanaStrict"
+                                "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kanaStrict"
                             },
                             "lastName": {
                                 "title": "LastName",
                                 "description": "last name",
                                 "type": "string",
                                 "example": "ヤマダ",
-                                "$ref": "#/$defs/patterns/kanaStrict"
+                                "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kanaStrict"
                             }
                         },
                         "required": [
