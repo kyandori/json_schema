@@ -108,7 +108,7 @@
                 "description": "postal code",
                 "type": "string",
                 "example": "1140034",
-                "$ref": "#/$defs/patterns/postalCode"
+                "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/postalCode"
             },
             "address": {
                 "title": "Address",
@@ -136,7 +136,7 @@
                         "description": "city",
                         "type": "string",
                         "example": "川崎市多摩区",
-                        "$ref": "#/$defs/patterns/city"
+                        "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/city"
                     },
                     "district": {
                         "title": "District",
@@ -149,14 +149,14 @@
                         "description": "subdistrict",
                         "type": "string",
                         "example": "3",
-                        "$ref": "#/$defs/patterns/subdistrict"
+                        "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/subdistrict"
                     },
                     "streetAddress": {
                         "title": "StreetAddress",
                         "description": "street address",
                         "type": "string",
                         "example": "3-15",
-                        "$ref": "#/$defs/patterns/streetAddress"
+                        "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/streetAddress"
                     },
                     "buildingNameRoomNumber": {
                         "title": "BuildingNameRoomNumber",
