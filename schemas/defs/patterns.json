@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json",
     "title": "Patterns",
-    "description": "正規表現",
+    "description": "正規表現の定義集",
     "$comment": "",
     "$defs": {
         "kana": {
