@@ -22,7 +22,7 @@
             },
             "structuredPropertyId": {
                 "title": "物件ID情報（構造化）",
-                "description": "",
+                "description": "新物件IDおよび旧物件IDを格納する物件識別情報",
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
