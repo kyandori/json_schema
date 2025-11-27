@@ -47,19 +47,19 @@
             "type": "string",
             "pattern": "^[0-9][0-9-]*$"
         },
-        "tel": {
+        "phoneNumber": {
             "title": "電話番号（汎用）",
             "description": "固定電話、携帯電話、またはIP電話形式の番号（ハイフンなし）",
             "type": "string",
             "pattern": "^(0[1-9][0-9]{8}|050[0-9]{8}|0[6-9]0[0-9]{8})$"
         },
-        "telMobile": {
+        "phoneNumberMobile": {
             "title": "携帯電話番号",
             "description": "090, 080, 070, 060等の携帯電話形式（ハイフンなし11桁）",
             "type": "string",
             "pattern": "^0[6-9]0[0-9]{8}$"
         },
-        "telLandline": {
+        "phoneNumberLandline": {
             "title": "固定電話番号",
             "description": "市外局番から始まる固定電話またはIP電話形式（ハイフンなし10桁または11桁）",
             "type": "string",
