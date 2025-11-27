@@ -12,6 +12,7 @@
                 "type": "string",
                 "format": "uuid"
             },
+            //別ファイルに記述
             "customerId": {
                 "title": "顧客ID",
                 "description": "顧客を一意に識別するためのID (UUID v4形式)",
@@ -29,6 +30,7 @@
                 "example": "123456",
                 "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/idPropertyOld"
             }
+            //
         },
         "name": {
             "$comment": "汎用的な名称定義。利用時にtitle等をオーバーライドしてください。",
