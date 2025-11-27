@@ -85,13 +85,13 @@
                                 "title": "名",
                                 "description": "個人名（ファーストネーム）",
                                 "example": "太郎",
-                                "$ref": "#/$defs/name"
+                                "$ref": "#/$defs/nameDefinitions/name"
                             },
                             "lastName": {
                                 "title": "姓",
                                 "description": "氏族名（ラストネーム）",
                                 "example": "山田",
-                                "$ref": "#/$defs/name"
+                                "$ref": "#/$defs/nameDefinitions/name"
                             }
                         },
                         "required": [
