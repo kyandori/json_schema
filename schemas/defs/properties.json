@@ -163,7 +163,38 @@
             }
         },
         "telephoneNumber": {
-            
+            "title": "電話番号情報",
+            "description": "連絡先となる電話番号（携帯または固定）",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mobile": {
+                    "title": "携帯電話番号",
+                    "description": "ハイフンなし11桁の携帯電話番号",
+                    "type": "string",
+                    "example": "09012345678",
+                    "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/telMobile"
+                },
+                "landline": {
+                    "title": "固定電話番号",
+                    "description": "ハイフンなし10桁または11桁の固定電話番号",
+                    "type": "string",
+                    "example": "0312345678",
+                    "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/telFixed"
+                }
+            },
+            "anyOf": [
+                {
+                    "required": [
+                        "mobile"
+                    ]
+                },
+                {
+                    "required": [
+                        "landline"
+                    ]
+                }
+            ]
         },
         "mail": {
             "title": "メールアドレス",
