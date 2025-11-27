@@ -146,7 +146,7 @@
                         "description": "JIS X 0401に基づく都道府県名",
                         "allOf": [
                             {
-                                "$ref": "#/$defs/name"
+                                "$ref": "#/$defs/nameDefinitions/name"
                             },
                             {
                                 "$ref": "https://kyandori.github.io/json_schema/schemas/defs/enums.json#/$defs/prefecture"
@@ -159,7 +159,7 @@
                         "example": "川崎市多摩区",
                         "allOf": [
                             {
-                                "$ref": "#/$defs/name"
+                                "$ref": "#/$defs/nameDefinitions/name"
                             },
                             {
                                 "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/city"
@@ -170,7 +170,7 @@
                         "title": "町域",
                         "description": "大字・町名",
                         "example": "西生田",
-                        "$ref": "#/$defs/name"
+                        "$ref": "#/$defs/nameDefinitions/name"
                     },
                     "subdistrict": {
                         "title": "丁目",
@@ -188,7 +188,7 @@
                         "title": "建物名・部屋番号",
                         "description": "集合住宅名、フロア、部屋番号等",
                         "example": "吉田マンション 105号室",
-                        "$ref": "#/$defs/name"
+                        "$ref": "#/$defs/nameDefinitions/name"
                     }
                 },
                 "required": [
