@@ -14,93 +14,74 @@
             }
         },
         "name": {
-            "combinedName": {
-                "title": "UnstructuredName",
-                "description": "名称・名前",
-                "type": "object",
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "title": "Name",
-                        "description": "name",
-                        "type": "string",
-                        "example": "山田　太郎"
+            "$comment": "title(例： \"title\": \"名前\"), description(例： \"description\": \"契約者名\"), example(例： \"example\": \"山田　太郎\")等を指定し、利用してください。",
+            "type": "string"
+        },
+        "nameKana": {
+            "$comment": "title(例： \"title\": \"名前（フリガナ）\"), description(例： \"description\": \"契約者名のフリガナ\"), example(例： \"example\": \"ヤマダ タロウ\")等を指定し、利用してください。",
+            "type": "string"
+        },
+        "structuredName": {
+            "title": "StructuredName",
+            "description": "structured name",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "title": "Name",
+                    "description": "name",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "firstName": {
+                            "title": "FirstName",
+                            "description": "first name",
+                            "type": "string",
+                            "example": "太郎"
+                        },
+                        "lastName": {
+                            "title": "LastName",
+                            "description": "last name",
+                            "type": "string",
+                            "example": "山田"
+                        }
                     },
-                    "nameKana": {
-                        "title": "NameKana",
-                        "description": "name kana",
-                        "type": "string",
-                        "example": "ヤマダ タロウ",
-                        "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kana"
-                    }
+                    "required": [
+                        "firstName",
+                        "lastName"
+                    ]
                 },
-                "required": [
-                    "name",
-                    "nameKana"
-                ]
+                "nameKana": {
+                    "title": "NameKana",
+                    "description": "name kana",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "firstName": {
+                            "title": "FirstName",
+                            "description": "first name",
+                            "type": "string",
+                            "example": "タロウ",
+                            "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kanaStrict"
+                        },
+                        "lastName": {
+                            "title": "LastName",
+                            "description": "last name",
+                            "type": "string",
+                            "example": "ヤマダ",
+                            "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kanaStrict"
+                        }
+                    },
+                    "required": [
+                        "firstName",
+                        "lastName"
+                    ]
+                }
             },
-            "structuredName": {
-                "title": "StructuredName",
-                "description": "structured name",
-                "type": "object",
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "title": "Name",
-                        "description": "name",
-                        "type": "object",
-                        "additionalProperties": false,
-                        "properties": {
-                            "firstName": {
-                                "title": "FirstName",
-                                "description": "first name",
-                                "type": "string",
-                                "example": "太郎"
-                            },
-                            "lastName": {
-                                "title": "LastName",
-                                "description": "last name",
-                                "type": "string",
-                                "example": "山田"
-                            }
-                        },
-                        "required": [
-                            "firstName",
-                            "lastName"
-                        ]
-                    },
-                    "nameKana": {
-                        "title": "NameKana",
-                        "description": "name kana",
-                        "type": "object",
-                        "additionalProperties": false,
-                        "properties": {
-                            "firstName": {
-                                "title": "FirstName",
-                                "description": "first name",
-                                "type": "string",
-                                "example": "タロウ",
-                                "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kanaStrict"
-                            },
-                            "lastName": {
-                                "title": "LastName",
-                                "description": "last name",
-                                "type": "string",
-                                "example": "ヤマダ",
-                                "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kanaStrict"
-                            }
-                        },
-                        "required": [
-                            "firstName",
-                            "lastName"
-                        ]
-                    }
-                },
-                "required": [
-                    "name",
-                    "nameKana"
-                ]
-            }
+            "required": [
+                "name",
+                "nameKana"
+            ]
         },
         "location": {
             "postalCode": {
