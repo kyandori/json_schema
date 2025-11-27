@@ -13,6 +13,8 @@
                 "format": "uuid"
             },
             "customerId": {
+                "title": "顧客ID",
+                "description": "顧客を一意に識別するためのID (UUID v4形式)",
                 "$ref": "#/$defs/uuid"
             },
             "newPropertyId": {
