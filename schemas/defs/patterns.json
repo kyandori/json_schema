@@ -6,7 +6,7 @@
     "$defs": {
         "kana": {
             "$comment": "カタカナと長音、スペースを許容",
-            "pattern": "^[ァ-ヴー\\s　]+$"
+            "pattern": "^[ァ-ヴー 　]+$"
         },
         "kanaStrict": {
             "$comment": "カタカナと長音のみ（スペース不可）",
