@@ -5,7 +5,7 @@
     "description": "システム全体で利用される共通プロパティ定義集（氏名、住所、連絡先など）",
     "$comment": "$defs内の各要素を$refで参照して利用してください。",
     "$defs": {
-        "idDefinition": {
+        "idDefinitions": {
             "uuid": {
                 "title": "UUID",
                 "description": "一意の識別子 (UUID v4形式)",
@@ -56,7 +56,7 @@
 
             
         },
-        "nameDefinition": {
+        "nameDefinitions": {
             "name": {
                 "$comment": "汎用的な名称定義。利用時にtitle等をオーバーライドしてください。",
                 "title": "名称",
@@ -130,7 +130,7 @@
                 ]
             }
         },
-        "locationDefinition": {
+        "locationDefinitions": {
             "postalCode": {
                 "example": "1140034",
                 "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/postalCode"
@@ -227,7 +227,7 @@
                 ]
             }
         },
-        "contactDefinition": {
+        "contactDefinitions": {
             "phoneNumber": {
                 "title": "電話番号",
                 "description": "固定電話、携帯電話、またはIP電話形式の番号（ハイフンなし）",
