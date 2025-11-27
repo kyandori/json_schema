@@ -19,7 +19,7 @@
         },
         "nameKana": {
             "$comment": "title(例： \"title\": \"名前（フリガナ）\"), description(例： \"description\": \"契約者名のフリガナ\"), example(例： \"example\": \"ヤマダ タロウ\")等を指定し、利用してください。",
-            "type": "string"
+            "type": "string",
             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kana"
         },
         "structuredName": {
@@ -34,8 +34,8 @@
                     "additionalProperties": false,
                     "properties": {
                         "firstName": {
-                            "title": "FirstName",
-                            "description": "first name",
+                            "title": "名",
+                            "description": "ファーストネーム",
                             "type": "string",
                             "example": "太郎"
                         },
