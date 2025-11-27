@@ -47,7 +47,7 @@
             "type": "string",
             "pattern": "^0[6-9]0[0-9]{8}$"
         },
-        "telFixed": {
+        "telLandline": {
             "title": "固定電話番号",
             "description": "市外局番から始まる固定電話またはIP電話形式（ハイフンなし10桁または11桁）",
             "type": "string",
