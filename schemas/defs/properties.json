@@ -16,7 +16,7 @@
             "customerId": {
                 "title": "顧客ID",
                 "description": "顧客を一意に識別するためのID (UUID v4形式)",
-                "$ref": "#/$defs/uuid"
+                "$ref": "https://kyandori.github.io/json_schema/schemas/defs/properties.json#/$defs/uuid"
             },
             "newPropertyId": {
                 "title": "新物件ID",
