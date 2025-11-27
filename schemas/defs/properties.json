@@ -12,6 +12,9 @@
                 "type": "string",
                 "format": "uuid"
             },
+            "customerId": {
+                "$ref": "#/$defs/uuid"
+            },
             "newPropertyId": {
                 "title": "新物件ID",
                 "description": "P+16桁の数字からなる新識別子",
