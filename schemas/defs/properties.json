@@ -22,14 +22,13 @@
             "type": "string"
         },
         "structuredName": {
-            "title": "StructuredName",
-            "description": "structured name",
+            "description": "姓・名を分割した人の名前に対応したプロパティ",
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "name": {
-                    "title": "Name",
-                    "description": "name",
+                    "title": "名前",
+                    "description": "人物名",
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
