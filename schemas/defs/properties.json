@@ -12,14 +12,14 @@
                 "type": "string",
                 "format": "uuid"
             },
-            "companyNewId": {
-                "title": "自社新ID",
+            "propertyNewId": {
+                "title": "物件新ID",
                 "description": "P+16桁の数字からなる新識別子",
                 "example": "P1234567890123456",
                 "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/idCompanyNew"
             },
-            "companyOldId": {
-                "title": "自社旧ID",
+            "propertyOldId": {
+                "title": "物件旧ID",
                 "description": "4-8桁の数字からなる旧識別子",
                 "example": "123456",
                 "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/idCompanyOld"
