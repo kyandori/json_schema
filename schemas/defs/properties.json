@@ -1,8 +1,8 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://kyandori.github.io/json_schema/schemas/defs/commons.json",
-    "title": "Defs",
-    "description": "定義",
+    "$id": "https://kyandori.github.io/json_schema/schemas/defs/properties.json",
+    "title": "Properties",
+    "description": "プロパティの汎用定義",
     "$comment": "$defs内の各要素を$refで参照して利用してください。",
     "$defs": {
         "id": {
