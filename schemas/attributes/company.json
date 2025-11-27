@@ -22,7 +22,7 @@
             "description": "本店の所在地または事業所の住所",
             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/properties.json#/$defs/location/address"
         },
-        "telephoneNumber": {
+        "phoneNumber": {
             "title": "代表電話番号",
             "description": "会社の代表連絡先（固定または携帯）",
             "$comment": "properties.jsonの定義名に合わせてphoneNumberから変更",
