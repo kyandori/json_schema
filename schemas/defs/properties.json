@@ -56,77 +56,79 @@
 
             
         },
-        "name": {
-            "$comment": "汎用的な名称定義。利用時にtitle等をオーバーライドしてください。",
-            "title": "名称",
-            "description": "一般的な名称文字列",
-            "type": "string"
-        },
-        "nameKana": {
-            "$comment": "汎用的なフリガナ定義。利用時にtitle等をオーバーライドしてください。",
-            "title": "フリガナ",
-            "description": "全角カタカナによる名称の読み仮名",
-            "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kana"
-        },
-        "structuredName": {
-            "title": "氏名情報（構造化）",
-            "description": "姓名分割およびフリガナを含む詳細な氏名情報",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "name": {
-                    "title": "氏名（漢字）",
-                    "description": "漢字表記の氏名セット",
-                    "type": "object",
-                    "additionalProperties": false,
-                    "properties": {
-                        "firstName": {
-                            "title": "名",
-                            "description": "個人名（ファーストネーム）",
-                            "example": "太郎",
-                            "$ref": "#/$defs/name"
-                        },
-                        "lastName": {
-                            "title": "姓",
-                            "description": "氏族名（ラストネーム）",
-                            "example": "山田",
-                            "$ref": "#/$defs/name"
-                        }
-                    },
-                    "required": [
-                        "firstName",
-                        "lastName"
-                    ]
-                },
-                "nameKana": {
-                    "title": "氏名（フリガナ）",
-                    "description": "全角カタカナ表記の氏名セット",
-                    "type": "object",
-                    "additionalProperties": false,
-                    "properties": {
-                        "firstName": {
-                            "title": "メイ",
-                            "description": "個人名のフリガナ",
-                            "example": "タロウ",
-                            "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kanaStrict"
-                        },
-                        "lastName": {
-                            "title": "セイ",
-                            "description": "氏族名のフリガナ",
-                            "example": "ヤマダ",
-                            "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kanaStrict"
-                        }
-                    },
-                    "required": [
-                        "firstName",
-                        "lastName"
-                    ]
-                }
+        "nameDefinition": {
+            "name": {
+                "$comment": "汎用的な名称定義。利用時にtitle等をオーバーライドしてください。",
+                "title": "名称",
+                "description": "一般的な名称文字列",
+                "type": "string"
             },
-            "required": [
-                "name",
-                "nameKana"
-            ]
+            "nameKana": {
+                "$comment": "汎用的なフリガナ定義。利用時にtitle等をオーバーライドしてください。",
+                "title": "フリガナ",
+                "description": "全角カタカナによる名称の読み仮名",
+                "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kana"
+            },
+            "structuredName": {
+                "title": "氏名情報（構造化）",
+                "description": "姓名分割およびフリガナを含む詳細な氏名情報",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "name": {
+                        "title": "氏名（漢字）",
+                        "description": "漢字表記の氏名セット",
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "firstName": {
+                                "title": "名",
+                                "description": "個人名（ファーストネーム）",
+                                "example": "太郎",
+                                "$ref": "#/$defs/name"
+                            },
+                            "lastName": {
+                                "title": "姓",
+                                "description": "氏族名（ラストネーム）",
+                                "example": "山田",
+                                "$ref": "#/$defs/name"
+                            }
+                        },
+                        "required": [
+                            "firstName",
+                            "lastName"
+                        ]
+                    },
+                    "nameKana": {
+                        "title": "氏名（フリガナ）",
+                        "description": "全角カタカナ表記の氏名セット",
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "firstName": {
+                                "title": "メイ",
+                                "description": "個人名のフリガナ",
+                                "example": "タロウ",
+                                "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kanaStrict"
+                            },
+                            "lastName": {
+                                "title": "セイ",
+                                "description": "氏族名のフリガナ",
+                                "example": "ヤマダ",
+                                "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kanaStrict"
+                            }
+                        },
+                        "required": [
+                            "firstName",
+                            "lastName"
+                        ]
+                    }
+                },
+                "required": [
+                    "name",
+                    "nameKana"
+                ]
+            }
         },
         "locationDefinition": {
             "postalCode": {
