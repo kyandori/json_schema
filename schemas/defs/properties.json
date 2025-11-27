@@ -195,6 +195,34 @@
                     "district",
                     "streetAddress"
                 ]
+            },
+            "latLong": {
+                "title": "地理座標",
+                "description": "緯度および経度による位置情報",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "latitude": {
+                        "title": "緯度",
+                        "description": "北緯（正）または南緯（負）",
+                        "type": "number",
+                        "minimum": -90,
+                        "maximum": 90,
+                        "example": 35.6895
+                    },
+                    "longitude": {
+                        "title": "経度",
+                        "description": "東経（正）または西経（負）",
+                        "type": "number",
+                        "minimum": -180,
+                        "maximum": 180,
+                        "example": 139.6917
+                    }
+                },
+                "required": [
+                    "latitude",
+                    "longitude"
+                ]
             }
         },
         "phoneNumber": {
@@ -241,34 +269,6 @@
             "type": "string",
             "format": "email",
             "example": "info@example.co.jp"
-        },
-        "latLong": {
-            "title": "地理座標",
-            "description": "緯度および経度による位置情報",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "latitude": {
-                    "title": "緯度",
-                    "description": "北緯（正）または南緯（負）",
-                    "type": "number",
-                    "minimum": -90,
-                    "maximum": 90,
-                    "example": 35.6895
-                },
-                "longitude": {
-                    "title": "経度",
-                    "description": "東経（正）または西経（負）",
-                    "type": "number",
-                    "minimum": -180,
-                    "maximum": 180,
-                    "example": 139.6917
-                }
-            },
-            "required": [
-                "latitude",
-                "longitude"
-            ]
         }
     }
 }
