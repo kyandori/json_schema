@@ -21,7 +21,7 @@
                 "$ref": "https://kyandori.github.io/json_schema/schemas/defs/properties.json#/$defs/uuid"
             },
             "structuredPropertyId": {
-                "title": "",
+                "title": "物件ID情報（構造化）",
                 "description": "",
                 "type": "object",
                 "additionalProperties": false,
