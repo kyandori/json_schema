@@ -28,7 +28,7 @@
             "$comment": "properties.jsonの定義名に合わせてphoneNumberから変更",
             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/properties.json#/$defs/structuredTelephoneNumber"
         },
-        "mail": {
+        "email": {
             "title": "代表メールアドレス",
             "description": "会社の代表問い合わせ先メールアドレス",
             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/properties.json#/$defs/mail"
