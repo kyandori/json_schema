@@ -36,3 +36,69 @@
         }
     }
 }
+
+
+
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json",
+    "title": "ValidationPatterns",
+    "description": "共通で使用される正規表現パターン定義集（入力バリデーション用）",
+    "$comment": "$defs内の各要素を$refで参照して利用してください。type:stringを含んでいます。",
+    "$defs": {
+        "kana": {
+            "title": "全角カナ（スペース許容）",
+            "description": "全角カタカナ、長音記号、およびスペース（半角・全角）のみで構成される文字列",
+            "type": "string",
+            "pattern": "^[ァ-ヴー 　]+$"
+        },
+        "kanaStrict": {
+            "title": "全角カナ（厳格）",
+            "description": "全角カタカナおよび長音記号のみで構成される文字列（スペース不可）",
+            "type": "string",
+            "pattern": "^[ァ-ヴー]+$"
+        },
+        "city": {
+            "title": "市区町村末尾チェック",
+            "description": "末尾が「市」「区」「町」「村」のいずれかで終わる文字列",
+            "type": "string",
+            "pattern": "^.+?[市区町村]$"
+        },
+        "subdistrict": {
+            "title": "丁目（数値）",
+            "description": "丁目などを表す数値文字列（桁数制限なし）",
+            "type": "string",
+            "pattern": "^[0-9]+$"
+        },
+        "streetAddress": {
+            "title": "番地・号（数値・ハイフン）",
+            "description": "先頭が数字で始まり、以降に数字またはハイフンを含む文字列",
+            "type": "string",
+            "pattern": "^[0-9][0-9-]*$"
+        },
+        "tel": {
+            "title": "電話番号（汎用）",
+            "description": "固定電話、携帯電話、またはIP電話形式の番号（ハイフンなし）",
+            "type": "string",
+            "pattern": "^(0[1-9][0-9]{8}|050[0-9]{8}|0[6-9]0[0-9]{8})$"
+        },
+        "telMobile": {
+            "title": "携帯電話番号",
+            "description": "090, 080, 070, 060等の携帯電話形式（ハイフンなし11桁）",
+            "type": "string",
+            "pattern": "^0[6-9]0[0-9]{8}$"
+        },
+        "telFixed": {
+            "title": "固定電話番号",
+            "description": "市外局番から始まる固定電話またはIP電話形式（ハイフンなし10桁または11桁）",
+            "type": "string",
+            "pattern": "^(0[1-9][0-9]{8}|050[0-9]{8})$"
+        },
+        "postalCode": {
+            "title": "郵便番号",
+            "description": "7桁の半角数字（ハイフンなし）",
+            "type": "string",
+            "pattern": "^[0-9]{7}$"
+        }
+    }
+}
