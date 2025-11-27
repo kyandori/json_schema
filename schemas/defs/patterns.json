@@ -5,13 +5,13 @@
     "description": "共通で使用される正規表現パターン定義集（入力バリデーション用）",
     "$comment": "$defs内の各要素を$refで参照して利用してください。type:stringを含んでいます。",
     "$defs": {
-        "propertyIdNew": {
+        "idPropertyNew": {
             "title": "新物件IDパターン",
             "description": "先頭がPで始まり、続く16桁の半角数字で構成される文字列",
             "type": "string",
             "pattern": "^P[0-9]{16}$"
         },
-        "propertyIdOld": {
+        "idPropertyOld": {
             "title": "旧物件IDパターン",
             "description": "4桁から8桁の半角数字",
             "type": "string",
