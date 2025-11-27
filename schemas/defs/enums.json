@@ -1,1 +1,37 @@
-
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://kyandori.github.io/json_schema/schemas/defs/enums.json",
+    "description": "列挙型の汎用定義",
+    "$comment": "$defs内の各要素を$refで参照して利用してください。",
+    "$defs": {
+        "kana": {
+            "$comment": "カタカナと長音、スペースを許容",
+            "pattern": "^[ァ-ヴー 　]+$"
+        },
+        "kanaStrict": {
+            "$comment": "カタカナと長音のみ（スペース不可）",
+            "pattern": "^[ァ-ヴー]+$"
+        },
+        "city": {
+            "pattern": "^.+?[市区町村]$"
+        },
+        "subdistrict": {
+            "pattern": "^[0-9]{1,2}$"
+        },
+        "streetAddress": {
+            "pattern": "^[0-9][0-9-]*$"
+        },
+        "tel": {
+            "pattern": "^(0[1-9][0-9]{8}|050[0-9]{8}|0[6-9]0[0-9]{8})$"
+        },
+        "telMobile": {
+            "pattern": "^0[6-9]0[0-9]{8}$"
+        },
+        "telFixed": {
+            "pattern": "^(0[1-9][0-9]{8}|050[0-9]{8})$"
+        },
+        "postalCode": {
+            "pattern": "^[0-9]{7}$"
+        }
+    }
+}
