@@ -23,7 +23,6 @@
             "$comment": "汎用的なフリガナ定義。利用時にtitle等をオーバーライドしてください。",
             "title": "フリガナ",
             "description": "全角カタカナによる名称の読み仮名",
-            "type": "string",
             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kana"
         },
         "structuredName": {
@@ -65,14 +64,12 @@
                         "firstName": {
                             "title": "メイ",
                             "description": "個人名のフリガナ",
-                            "type": "string",
                             "example": "タロウ",
                             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kanaStrict"
                         },
                         "lastName": {
                             "title": "セイ",
                             "description": "氏族名のフリガナ",
-                            "type": "string",
                             "example": "ヤマダ",
                             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kanaStrict"
                         }
