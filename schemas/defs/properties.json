@@ -197,13 +197,13 @@
                 ]
             }
         },
-        "telephoneNumber": {
+        "phoneNumber": {
             "title": "電話番号",
             "description": "固定電話、携帯電話、またはIP電話形式の番号（ハイフンなし）",
             "example": "0312345678",
-            "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/tel"
+            "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/phoneNumber"
         },
-        "structuredTelephoneNumber": {
+        "structuredPhoneNumber": {
             "title": "電話番号情報（構造化）",
             "description": "携帯電話と固定電話を区分した詳細な連絡先情報",
             "type": "object",
@@ -213,13 +213,13 @@
                     "title": "携帯電話番号",
                     "description": "ハイフンなし11桁の携帯電話番号",
                     "example": "09012345678",
-                    "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/telMobile"
+                    "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/phoneNumberMobile"
                 },
                 "landline": {
                     "title": "固定電話番号",
                     "description": "ハイフンなし10桁または11桁の固定電話番号",
                     "example": "0312345678",
-                    "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/telLandline"
+                    "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/phoneNumberLandline"
                 }
             },
             "anyOf": [
