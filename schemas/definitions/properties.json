@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://kyandori.github.io/schemas/defs/properties.json",
+    "$id": "https://kyandori.github.io/json_schemas/schemas/definitions/properties.json",
     "title": "CommonPropertyDefinitions",
     "description": "システム全体で利用される共通プロパティ定義集（氏名、住所、連絡先など）",
     "$comment": "$defs内の各要素を$refで参照して利用してください。",
