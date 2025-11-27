@@ -87,9 +87,6 @@
         },
         "location": {
             "postalCode": {
-                "title": "郵便番号",
-                "description": "7桁の郵便番号（ハイフンなし）",
-                "type": "string",
                 "example": "1140034",
                 "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/postalCode"
             },
