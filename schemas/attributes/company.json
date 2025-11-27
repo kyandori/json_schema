@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://kyandori.github.io/json_schema/schemas/attributes/company.json",
     "title": "CompanyDataDefinitions",
-    "description": "会社情報に関する定義集（商号、屋号、所在地、連絡先など）",
+    "description": "会社情報に関する定義集",
     "$comment": "$defs内の各要素を$refで参照して利用してください。",
     "$defs": {
         "companyName": {
