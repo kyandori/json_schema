@@ -11,7 +11,9 @@
                 "description": "一意の識別子 (UUID v4形式)",
                 "type": "string",
                 "format": "uuid"
-            },
+            }
+
+            
             //別ファイルに記述
             "customerId": {
                 "title": "顧客ID",
@@ -51,6 +53,8 @@
                 ]
             }
             //
+
+            
         },
         "name": {
             "$comment": "汎用的な名称定義。利用時にtitle等をオーバーライドしてください。",
