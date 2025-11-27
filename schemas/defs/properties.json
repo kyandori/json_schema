@@ -131,13 +131,11 @@
                         "title": "丁目",
                         "description": "丁目番地等の数値区分",
                         "example": "3",
-                        "type": "string",
                         "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/subdistrict"
                     },
                     "streetAddress": {
                         "title": "番地・号",
-                        "description": "街区番号、住居番号（例: 3-15）",
-                        "type": "string",
+                        "description": "街区番号、住居番号",
                         "example": "3-15",
                         "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/streetAddress"
                     },
