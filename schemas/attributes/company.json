@@ -1,10 +1,27 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://kyandori.github.io/json_schema/schemas/attributes/company.json",
-    "title": "会社情報",
+    "title": "",
     "description": "",
     "$comment": "$defs内の各要素を$refで参照して利用してください。",
     "$defs": {
-        
+        "name": {
+            
+        },
+        "tradeName": {
+            
+        },
+        "address": {
+            
+        },
+        "phoneNumber": {
+            
+        },
+        "mail": {
+            
+        },
+        "siteUrl": {
+            
+        }
     }
 }
