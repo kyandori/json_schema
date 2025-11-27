@@ -23,13 +23,13 @@
             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kana"
         },
         "structuredName": {
-            "description": "姓・名を分割した、人の名前に対応したプロパティ",
+            "description": "姓・名の分割及びフリガナに対応した名前のプロパティ",
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "name": {
                     "title": "名前",
-                    "description": "人物名",
+                    "description": "人の名前",
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
@@ -53,20 +53,20 @@
                 },
                 "nameKana": {
                     "title": "名前（フリガナ）",
-                    "description": "name kana",
+                    "description": "人の名前のフリガナ",
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
                         "firstName": {
-                            "title": "FirstName",
-                            "description": "first name",
+                            "title": "メイ",
+                            "description": "ファーストネームのフリガナ",
                             "type": "string",
                             "example": "タロウ",
                             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kanaStrict"
                         },
                         "lastName": {
-                            "title": "LastName",
-                            "description": "last name",
+                            "title": "セイ",
+                            "description": "ラストネームのフリガナ",
                             "type": "string",
                             "example": "ヤマダ",
                             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kanaStrict"
