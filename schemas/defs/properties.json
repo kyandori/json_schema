@@ -14,7 +14,7 @@
             }
         },
         "name": {
-            "unstructuredName": {
+            "combinedName": {
                 "title": "UnstructuredName",
                 "description": "名称・名前",
                 "type": "object",
