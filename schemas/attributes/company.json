@@ -29,8 +29,7 @@
             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/properties.json#/$defs/structuredTelephoneNumber"
         },
         "email": {
-            "title": "代表メールアドレス",
-            "description": "会社の代表問い合わせ先メールアドレス",
+            "description": "会社のメールアドレス",
             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/properties.json#/$defs/email"
         },
         "siteUrl": {
