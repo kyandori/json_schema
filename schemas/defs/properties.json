@@ -173,8 +173,8 @@
             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/tel"
         },
         "structuredTelephoneNumber": {
-            "title": "電話番号情報",
-            "description": "連絡先となる電話番号（携帯または固定）",
+            "title": "電話番号情報（構造化）",
+            "description": "携帯電話と固定電話を区分した詳細な連絡先情報",
             "type": "object",
             "additionalProperties": false,
             "properties": {
