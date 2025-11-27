@@ -18,6 +18,27 @@
                 "description": "顧客を一意に識別するためのID (UUID v4形式)",
                 "$ref": "https://kyandori.github.io/json_schema/schemas/defs/properties.json#/$defs/uuid"
             },
+            "structuredPropertyId": {
+                "title": "",
+                "description": "",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    
+                },
+                "anyOf": [
+                    {
+                        "required": [
+                            "newPropertyId"
+                        ]
+                    },
+                    {
+                        "required": [
+                            "oldPropertyId"
+                        ]
+                    }
+                ]
+            },
             "newPropertyId": {
                 "title": "新物件ID",
                 "description": "P+16桁の数字からなる新識別子",
