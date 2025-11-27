@@ -85,22 +85,20 @@
         },
         "location": {
             "postalCode": {
-                "title": "PostalCode",
-                "description": "postal code",
+                "title": "郵便番号",
                 "type": "string",
                 "example": "1140034",
                 "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/postalCode"
             },
             "address": {
-                "title": "Address",
-                "description": "address",
+                "title": "所在地",
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
                     "prefecture": {
-                        "title": "Prefecture",
-                        "description": "prefecture",
-                        "type": "string",
+                        "title": "都道府県名",
+                        "description": "所在地の都道府県名",
+                        "$ref": "#/$defs/name",
                         "$ref": "https://kyandori.github.io/json_schema/schemas/defs/enums.json#/$defs/prefecture"
                     },
                     "city": {
