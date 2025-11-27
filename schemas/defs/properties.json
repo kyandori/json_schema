@@ -167,6 +167,9 @@
             }
         },
         "telephoneNumber": {
+            
+        },
+        "structuredTelephoneNumber": {
             "title": "電話番号情報",
             "description": "連絡先となる電話番号（携帯または固定）",
             "type": "object",
