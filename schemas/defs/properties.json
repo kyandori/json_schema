@@ -235,7 +235,7 @@
                 }
             ]
         },
-        "mail": {
+        "email": {
             "title": "メールアドレス",
             "description": "RFC 5322形式の電子メールアドレス",
             "type": "string",
