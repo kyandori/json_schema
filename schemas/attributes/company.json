@@ -1,6 +1,53 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://kyandori.github.io/json_schema/schemas/attributes/company.json",
+    "title": "CompanyDataDefinitions",
+    "description": "会社情報に関する定義集（商号、屋号、所在地、連絡先など）",
+    "$comment": "$defs内の各要素を$refで参照して利用してください。",
+    "$defs": {
+        "companyName": {
+            "title": "会社名",
+            "description": "登記上の商号または組織名称",
+            "example": "株式会社キャンドリ",
+            "$ref": "https://kyandori.github.io/json_schema/schemas/defs/properties.json#/$defs/name"
+        },
+        "tradeName": {
+            "title": "屋号",
+            "description": "店舗名、事務所名など、商号以外に使用している名称",
+            "example": "キャンドリカフェ 渋谷店",
+            "$ref": "https://kyandori.github.io/json_schema/schemas/defs/properties.json#/$defs/name"
+        },
+        "address": {
+            "title": "所在地",
+            "description": "本店の所在地または事業所の住所",
+            "$ref": "https://kyandori.github.io/json_schema/schemas/defs/properties.json#/$defs/location/address"
+        },
+        "telephoneNumber": {
+            "title": "代表電話番号",
+            "description": "会社の代表連絡先（固定または携帯）",
+            "$comment": "properties.jsonの定義名に合わせてphoneNumberから変更",
+            "$ref": "https://kyandori.github.io/json_schema/schemas/defs/properties.json#/$defs/structuredTelephoneNumber"
+        },
+        "mail": {
+            "title": "代表メールアドレス",
+            "description": "会社の代表問い合わせ先メールアドレス",
+            "$ref": "https://kyandori.github.io/json_schema/schemas/defs/properties.json#/$defs/mail"
+        },
+        "siteUrl": {
+            "title": "WebサイトURL",
+            "description": "会社の公式ホームページURL",
+            "type": "string",
+            "format": "uri",
+            "example": "https://example.co.jp"
+        }
+    }
+}
+
+
+
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://kyandori.github.io/json_schema/schemas/attributes/company.json",
     "title": "",
     "description": "",
     "$comment": "$defs内の各要素を$refで参照して利用してください。",
