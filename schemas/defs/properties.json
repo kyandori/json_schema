@@ -14,16 +14,16 @@
             }
         },
         "name": {
-            "$comment": "title(例： \"title\": \"名前\"), description(例： \"description\": \"契約者名\"), example(例： \"example\": \"山田　太郎\")等を指定し、利用してください。",
+            "$comment": "title(例： \"title\": \"名称\"), description(例： \"description\": \"会社名\"), example(例： \"example\": \"株式会社山田商会\")等を指定し、利用してください。",
             "type": "string"
         },
         "nameKana": {
-            "$comment": "title(例： \"title\": \"名前（フリガナ）\"), description(例： \"description\": \"契約者名のフリガナ\"), example(例： \"example\": \"ヤマダ タロウ\")等を指定し、利用してください。",
+            "$comment": "title(例： \"title\": \"名称（フリガナ）\"), description(例： \"description\": \"会社名のフリガナ\"), example(例： \"example\": \"カブシキガイシャヤマダショウカイ\")等を指定し、利用してください。",
             "type": "string",
             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kana"
         },
         "structuredName": {
-            "description": "姓・名を分割した人の名前に対応したプロパティ",
+            "description": "姓・名を分割した、人の名前に対応したプロパティ",
             "type": "object",
             "additionalProperties": false,
             "properties": {
@@ -36,14 +36,14 @@
                         "firstName": {
                             "title": "名",
                             "description": "ファーストネーム",
-                            "type": "string",
-                            "example": "太郎"
+                            "example": "太郎",
+                            "$ref": "#/$defs/name"
                         },
                         "lastName": {
-                            "title": "LastName",
-                            "description": "last name",
-                            "type": "string",
-                            "example": "山田"
+                            "title": "姓",
+                            "description": "ラストネーム",
+                            "example": "山田",
+                            "$ref": "#/$defs/name"
                         }
                     },
                     "required": [
@@ -52,7 +52,7 @@
                     ]
                 },
                 "nameKana": {
-                    "title": "NameKana",
+                    "title": "名前（フリガナ）",
                     "description": "name kana",
                     "type": "object",
                     "additionalProperties": false,
