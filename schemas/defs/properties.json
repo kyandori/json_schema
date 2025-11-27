@@ -11,6 +11,18 @@
                 "description": "一意の識別子 (UUID v4形式)",
                 "type": "string",
                 "format": "uuid"
+            },
+            "companyNewId": {
+                "title": "自社新ID",
+                "description": "P+16桁の数字からなる新識別子",
+                "example": "P1234567890123456",
+                "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/idCompanyNew"
+            },
+            "companyOldId": {
+                "title": "自社旧ID",
+                "description": "4-8桁の数字からなる旧識別子",
+                "example": "123456",
+                "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/idCompanyOld"
             }
         },
         "name": {
