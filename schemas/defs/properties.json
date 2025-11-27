@@ -170,7 +170,7 @@
                     "title": "固定電話番号",
                     "description": "ハイフンなし10桁または11桁の固定電話番号",
                     "example": "0312345678",
-                    "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/telFixed"
+                    "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/telLandline"
                 }
             },
             "anyOf": [
