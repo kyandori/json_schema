@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://kyandori.github.io/json_schema/schemas/items/customer.json",
+    "$id": "https://kyandori.github.io/json_schema/schemas/attributes/customer.json",
     "title": "",
     "description": "",
     "$comment": "$defs内の各要素を$refで参照して利用してください。",
