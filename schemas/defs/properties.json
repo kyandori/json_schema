@@ -163,14 +163,12 @@
                 "mobile": {
                     "title": "携帯電話番号",
                     "description": "ハイフンなし11桁の携帯電話番号",
-                    "type": "string",
                     "example": "09012345678",
                     "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/telMobile"
                 },
                 "landline": {
                     "title": "固定電話番号",
                     "description": "ハイフンなし10桁または11桁の固定電話番号",
-                    "type": "string",
                     "example": "0312345678",
                     "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/telFixed"
                 }
