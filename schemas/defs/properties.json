@@ -102,37 +102,38 @@
                         "$ref": "https://kyandori.github.io/json_schema/schemas/defs/enums.json#/$defs/prefecture"
                     },
                     "city": {
-                        "title": "City",
-                        "description": "city",
-                        "type": "string",
+                        "title": "市区町村名",
+                        "description": "所在地の市区町村名",
                         "example": "川崎市多摩区",
+                        "$ref": "#/$defs/name",
                         "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/city"
                     },
                     "district": {
-                        "title": "District",
-                        "description": "district",
-                        "type": "string",
-                        "example": "西生田"
+                        "title": "町域",
+                        "description": "所在地の町域",
+                        "example": "西生田",
+                        "$ref": "#/$defs/name"
                     },
                     "subdistrict": {
-                        "title": "Subdistrict",
-                        "description": "subdistrict",
-                        "type": "string",
+                        "title": "丁目",
+                        "description": "所在地の丁目",
                         "example": "3",
+                        "type": "string",
                         "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/subdistrict"
                     },
                     "streetAddress": {
-                        "title": "StreetAddress",
-                        "description": "street address",
+                        "title": "以降所在地",
+                        "description": "丁目以降の所在地",
+                        "$comment": "**丁目がない場合**は町域以降の所在地",
                         "type": "string",
                         "example": "3-15",
                         "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/streetAddress"
                     },
                     "buildingNameRoomNumber": {
-                        "title": "BuildingNameRoomNumber",
-                        "description": "building name, room number",
-                        "type": "string",
-                        "example": "吉田マンション 105号室"
+                        "title": "建物名・部屋番号",
+                        "description": "建物名、部屋番号またはフロア",
+                        "example": "吉田マンション 105号室",
+                        "$ref": "#/$defs/name"
                     }
                 },
                 "required": [
@@ -141,7 +142,7 @@
                     "district",
                     "streetAddress"
                 ]
-            } 
+            }
         },
         "telephoneNumber": {
             
