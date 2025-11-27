@@ -1,47 +1,52 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://kyandori.github.io/json_schema/schemas/defs/properties.json",
-    "title": "Properties",
-    "description": "プロパティの汎用定義",
+    "title": "CommonPropertyDefinitions",
+    "description": "システム全体で利用される共通プロパティ定義集（氏名、住所、連絡先など）",
     "$comment": "$defs内の各要素を$refで参照して利用してください。",
     "$defs": {
         "id": {
             "uuid": {
                 "title": "UUID",
-                "description": "UUID",
+                "description": "一意の識別子 (UUID v4形式)",
                 "type": "string",
                 "format": "uuid"
             }
         },
         "name": {
-            "$comment": "title(例： \"title\": \"名称\"), description(例： \"description\": \"会社名\"), example(例： \"example\": \"株式会社山田商会\")等を指定し、利用してください。",
+            "$comment": "汎用的な名称定義。利用時にtitle等をオーバーライドしてください。",
+            "title": "名称",
+            "description": "一般的な名称文字列",
             "type": "string"
         },
         "nameKana": {
-            "$comment": "title(例： \"title\": \"名称（フリガナ）\"), description(例： \"description\": \"会社名のフリガナ\"), example(例： \"example\": \"カブシキガイシャヤマダショウカイ\")等を指定し、利用してください。",
+            "$comment": "汎用的なフリガナ定義。利用時にtitle等をオーバーライドしてください。",
+            "title": "フリガナ",
+            "description": "全角カタカナによる名称の読み仮名",
             "type": "string",
             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kana"
         },
         "structuredName": {
-            "description": "姓・名の分割及びフリガナに対応した名前のプロパティ",
+            "title": "氏名情報（構造化）",
+            "description": "姓名分割およびフリガナを含む詳細な氏名情報",
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "name": {
-                    "title": "名前",
-                    "description": "漢字又はひらがなの人物名",
+                    "title": "氏名（漢字）",
+                    "description": "漢字表記の氏名セット",
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
                         "firstName": {
                             "title": "名",
-                            "description": "ファーストネーム",
+                            "description": "個人名（ファーストネーム）",
                             "example": "太郎",
                             "$ref": "#/$defs/name"
                         },
                         "lastName": {
                             "title": "姓",
-                            "description": "ラストネーム",
+                            "description": "氏族名（ラストネーム）",
                             "example": "山田",
                             "$ref": "#/$defs/name"
                         }
@@ -52,21 +57,21 @@
                     ]
                 },
                 "nameKana": {
-                    "title": "名前（フリガナ）",
-                    "description": "人の名前のフリガナ",
+                    "title": "氏名（フリガナ）",
+                    "description": "全角カタカナ表記の氏名セット",
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
                         "firstName": {
                             "title": "メイ",
-                            "description": "ファーストネームのフリガナ",
+                            "description": "個人名のフリガナ",
                             "type": "string",
                             "example": "タロウ",
                             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kanaStrict"
                         },
                         "lastName": {
                             "title": "セイ",
-                            "description": "ラストネームのフリガナ",
+                            "description": "氏族名のフリガナ",
                             "type": "string",
                             "example": "ヤマダ",
                             "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/kanaStrict"
