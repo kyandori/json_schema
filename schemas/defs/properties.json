@@ -167,7 +167,10 @@
             }
         },
         "telephoneNumber": {
-            
+            "title": "電話番号",
+            "description": "固定電話、携帯電話、またはIP電話形式の番号（ハイフンなし）",
+            "example": "0312345678",
+            "$ref": "https://kyandori.github.io/json_schema/schemas/defs/patterns.json#/$defs/tel"
         },
         "structuredTelephoneNumber": {
             "title": "電話番号情報",
